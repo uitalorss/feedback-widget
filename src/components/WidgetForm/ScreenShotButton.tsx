@@ -10,6 +10,7 @@ interface ScreenshotButtonProps {
 
 export function ScreenShotButton({onScreenshotTaken, screenshot}: ScreenshotButtonProps){
   const [isTakingScreenshot, setIsTakingScreenshot] = useState(false);
+  const [comment, setComment] = useState('');
 
   async function handleTakeScreenShot(){
     setIsTakingScreenshot(true)
